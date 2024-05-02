@@ -23,7 +23,7 @@ def load_env():
 
 
 @pytest.fixture(scope='function', autouse=True)
-def browser_management():
+def browser_management(request):
     selenoid_login = os.getenv('SELENOID_LOGIN')
     selenoid_pass = os.getenv('SELENOID_PASS')
     selenoid_url = os.getenv('SELENOID_URL')
