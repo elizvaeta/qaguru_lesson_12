@@ -1,3 +1,5 @@
+import allure
+
 from models.pages.registration_page import registration_page
 from models.user import liza
 
